@@ -1,0 +1,25 @@
+div{
+    padding:10px;
+    background-color: #EEE;
+    border:1px solid #cccccc;
+    width:200px;
+    height: 200px;
+    margin: 20px auto;
+
+    /* 
+    1. first value for right side if its negative the side will be left
+    2. second value for bottom side if its negative the side will be top
+    3. third value for foggy it couldn't be negative
+    4. fourth value color
+    5. fifth (outset : out the div - inset :inside the div)*/
+
+    box-shadow: -8px -8px 5px #F00;
+
+    /* vendor prefix for shadow */
+    -webkit-box-shadow: -8px -8px 5px #F00;
+    -o-box-shadow: -8px -8px 5px #F00;
+    -moz-box-shadow: -8px -8px 5px #F00;
+
+
+
+}
