@@ -1,0 +1,9 @@
+div{
+    width: 200px;
+    height: 200px;
+    background-color: #DDD;
+    margin:200px auto;
+    border-radius: 0px 50px 0px 50px;
+    text-align: center;
+
+}
