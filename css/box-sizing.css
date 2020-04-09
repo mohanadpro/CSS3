@@ -1,0 +1,28 @@
+*{
+    /* this properity let the content maintain the "width property" within the value that is dedicated to it */
+    box-sizing: border-box;
+}
+
+section{
+    width: 940px;
+    margin: 20px auto;
+
+}
+
+.left{
+    background-color: red;
+    color: white;
+    float: left;
+    width: 30%;
+    border: 1px solid black;
+}
+
+
+.right{
+    background-color: blue;
+    color: white;
+    float: right;
+    width: 70%;
+    border: 1px solid black;
+
+}
