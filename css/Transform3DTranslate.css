@@ -1,0 +1,24 @@
+body{
+    /* to make the form 3d */
+    perspective: 600px;
+}
+
+img {
+    display: block;
+    margin: 100px auto;
+    width: 300px;
+    height: 300px;
+}
+
+img:hover{
+    /*  translate3d (x,y,z) 
+    1. positive value for Z Axis make the element comes to the front
+    2. negative value for Z Axis make the element back
+    */
+
+    /* transform: translate3d(0,0,100px); */
+
+    /* transformZ() it works the same*/
+
+    transform: translateZ(100px);
+}
