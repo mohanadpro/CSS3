@@ -1,0 +1,32 @@
+.container{
+    width: 400px;
+    height: 300px;
+
+    background-color: #CCC;
+    border: 1px solid #EEE;
+    margin: 100px auto;
+}
+
+.skew{
+    width: 200px;
+    height: 150px;
+
+    background-color: #F00;
+    border: 1px solid rgb(138, 134, 134);
+ 
+    margin: 75px;
+    overflow: hidden;
+
+    /* the effects are applied slow within 0.5 second */
+    transition: all 0.5s ease-out;
+
+}
+
+.skew:hover{
+    /* skew tile the element x deg and y deg
+    1. x is positive the element turn to the left
+    2. x is negative the element turn to the right
+    3. y is positive the element turn to the bottom
+    4. y is negative the element turn to the up */
+    transform: skew(0,20deg);
+}
