@@ -1,0 +1,13 @@
+body{
+    perspective: 600px;
+}
+
+img{
+    display: block;
+    margin:100px auto;
+    transition:all 0.5s ease-out
+}
+
+img:hover{
+    transform: scaleZ(2) rotateY(40deg)
+}
