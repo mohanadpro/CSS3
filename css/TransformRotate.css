@@ -6,5 +6,5 @@ div{
 }
 
 div:hover{
-	transform: rotate(10deg);
+	transform: rotateX(180deg);
 }

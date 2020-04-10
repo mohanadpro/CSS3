@@ -1,0 +1,16 @@
+img{
+    width: 300px;
+    margin: 30%;
+    transition:all 0.5s ease-in-out
+}
+
+img:hover{
+    /*
+    1. transform: rotateX(30deg): it will turn in 30deg to the front so it will go out of the screen 
+    2. transform: rotateY(30deg):  it will turn in 30deg virtical so it will go out of the screen
+    3. transform: rotateZ(30deg) it wil trun in 30 deg on Z Axis so it will not go out from the screen
+    */
+    transform: rotateY(180deg);
+
+    /*  */
+}
