@@ -15,7 +15,7 @@ div:hover{
         3. if y is positive the div will move to the bottom
         3. if y is negative the div will move to the up */
         
-    transform: translate(0px,20px);
+    transform: translate(20px,10px);
 
     
 }
