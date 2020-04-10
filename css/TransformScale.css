@@ -17,5 +17,5 @@ div:hover{
 
         if I write the element scale(2) it means that the scale will apply 2 Horizontal and 2 virtical
     */
-    transform: scale(2,1.5);
+    transform: scale(2,1.7);
 }
