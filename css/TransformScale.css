@@ -1,14 +1,21 @@
 div{
     width: 200px;
-    height: 2   00px;
+    height: 100px;
     background-color: #CCC;
     color: black;
     margin: 100px auto;
     border: 1px solid #EEE;
 
+    /* overflow:hidden let the items stay inside the element in our case "div" */
+    /* overflow:visible doesn't let the items to stay inside the element in our case "div" */
+    /* overflow:scroll all the items inside the "div" but it make a scroll  */
+    overflow: scroll;
 }
 
 div:hover{
-    /* expand the element 2 Horizontal and 1.5 Virtical */
+    /* expand the element 2 Horizontal and 1.5 Virtical 
+
+        if I write the element scale(2) it means that the scale will apply 2 Horizontal and 2 virtical
+    */
     transform: scale(2,1.5);
 }
