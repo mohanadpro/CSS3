@@ -1,0 +1,14 @@
+div{
+    width: 200px;
+    height: 2   00px;
+    background-color: #CCC;
+    color: black;
+    margin: 100px auto;
+    border: 1px solid #EEE;
+
+}
+
+div:hover{
+    /* expand the element 2 Horizontal and 1.5 Virtical */
+    transform: scale(2,1.5);
+}
