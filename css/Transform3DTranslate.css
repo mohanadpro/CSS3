@@ -1,5 +1,6 @@
 body{
-    /* to make the form 3d */
+    /* to make the child elements 3d.
+     It gives 600px to front of the z Axis  */
     perspective: 600px;
 }
 

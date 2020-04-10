@@ -1,0 +1,25 @@
+
+
+div:nth-of-type(1){
+    perspective: 500px;
+}
+
+div:nth-of-type(2){
+    perspective: 350px;
+}
+
+div:nth-of-type(3){
+
+    perspective: 200px;
+}
+
+img{
+    display: block;
+    margin-top: 100px;
+    margin-left: 45%;
+    margin-bottom: 100px;
+    width: 100px;
+    height: 50;
+    transform: translateZ(100px);
+}
+
