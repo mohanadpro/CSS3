@@ -10,7 +10,10 @@ body{
     margin: 100px auto;
     position: relative;
     transform: rotateY(30deg);
-    /* perserve the 3d preview for the element and it's children */
+    /* 
+    1. perserve the 3d preview for the element and it's children.
+    2. flat prevent the 3d property
+    */
     transform-style: preserve-3d;
 }
  
@@ -21,14 +24,62 @@ body{
     position: absolute;
     transform: translateZ(100px) rotateX(20deg);
     left:30px
+
+
+}
+a{
+    text-decoration: none;
 }
 
+a:hover{
+    text-decoration:underline;
+}
 .child2{
     width:100px;
-    height: 150px;
+    height: 200px;
     background-color: blue;
     transform: translateZ(200px) rotateX(-20deg);;
     left: 30px;
     position: absolute;
    
+
+    /* Decorat the text */
+    text-align: center;
+    text-decoration: underline;
+    color:white;
+    overflow: scroll;
+    direction: rtl;
+    line-height: 30px;
+    word-spacing: 20px;
+
+    /* 
+    1. nowrap: the text will come out of the element
+    2. normal: the text will wrap in the end of the width of element
+    */
+    white-space: normal;
+    /* 
+    1. capitalize : make the first letter from each word capital
+    2. uppercase :make all the words Capital letter
+    3. lowercase : make all the words 
+    small letter 
+    */
+    text-transform: uppercase;
+    
+    /* 
+    make the text start after 20 px within the element 
+    */
+    text-indent: 20px;
+
+}
+
+
+span.old{
+    text-decoration: line-through;
+    color:white;
+
+}
+
+span.new{
+    text-decoration: none;
+    color:blue
 }
