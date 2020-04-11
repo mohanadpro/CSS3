@@ -51,6 +51,7 @@ a:hover{
     direction: rtl;
     line-height: 30px;
     word-spacing: 20px;
+    font:italic bolder 10px/40px "Times New Roman",Arial,Thomas;
 
     /* 
     1. nowrap: the text will come out of the element
