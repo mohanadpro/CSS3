@@ -17,6 +17,9 @@ img{
     position: absolute;
     left: 5px;
     top:5px;
+
+    /* determine the shape of the cursor */
+    cursor:context-menu;
 }
 
 

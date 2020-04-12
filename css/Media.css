@@ -1,0 +1,30 @@
+/* @media determine where the script will be applied */
+@media print
+{
+    p{
+        color: #F00;
+        font-size: 20px;
+    }
+}
+
+@media screen
+{
+    div
+    {
+        width: 500px;
+        /*
+         the whole width will become 500+5 left+5 right
+        */
+        border: 5px solid black;
+
+        /* 
+        It's not computed from the whole width for the element:div 
+        */
+
+        outline: 5px solid blue;
+    }
+    p{
+        color: #00F;
+        font-size: 40px;
+    }
+}
