@@ -1,0 +1,22 @@
+div{
+    width: 300px;
+    height: 300px;
+    margin:100px auto;
+    text-align: center;
+    line-height: 300px;
+    background-color: rgb(46, 46, 119);
+    color: white;
+}
+
+div:hover{
+    box-shadow:inset 70px 30px 10px rgb(46, 46, 119),inset -70px -30px 10px rgb(46, 46, 119);;
+    transform:  scale(1.2) rotateZ(10deg);
+    /* opacity: 0.6; */
+    background-color: aqua;
+    border-radius: 50%;
+    color: black;
+    transition-property:all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    /* transition: all 1s linear; */
+}
