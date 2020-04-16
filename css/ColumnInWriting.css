@@ -1,6 +1,25 @@
+div{
+    width: 500px;
+    background-color: rgb(45, 25, 92);
+    color: white;
+    margin: 100px auto;
+    text-align: center;
+}
+
 p{
     /* column count : divides the p into 3 column */
-    -webkit-column-count: 3;
+    -webkit-column-count: 2;
+     column-count: 2;
+
     /* column gap: makes a between the column 50px */
     -webkit-column-gap: 50px;
+     column-gap: 50px;
+
+     /* column rule: makes a border between the column and it takes the same properties that the border is taken */
+     -webkit-column-rule: 10px solid rgb(65, 14, 14);
+
+     /* determine the size of the column */
+     -webkit-column-width: 225px;
+
+
 }
