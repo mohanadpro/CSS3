@@ -5,10 +5,8 @@ div{
     background-image: url('../img/1.jpg');
 
     /* 
-    resize the image to be the whole image within the specified size for the element in our case is "div"
+    resize the image for full the whole element in our case is "div"
      */
-
     background-size: 100% 100%;
-
 }
 

@@ -1,0 +1,89 @@
+.flex{
+    display: flex;
+    width: 800px;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: #EEE;
+    margin: 100px auto;    
+    height: 400px;
+    /* 
+    control the view of the element 
+    */
+    flex-direction: row;
+
+    /* deafult value is nowrap */
+    flex-wrap:wrap;
+
+    /* 
+    it controls the start of childer's view
+    1. start : in the normal situation children will appear from the left of the element in the rtl situation children will appear from the left of the elemetn
+    2.  end :in the normal situation children will appear from the right of the element
+    3.center: it centers the children in the middle of the parent
+    4.space-between: it makes an equal space horizontaly between the children 
+    5.space-arroun:it make and equal space arround the children
+    */
+    justify-content: space-around;
+
+    /* align-content : it behaves same as justify-content but in virtical way and it has the same values
+    center
+    start
+    end
+    space-between
+    space-arround
+    strech
+    */
+    align-content: center;
+    /* align children but virtically  */
+    align-items: center;
+    overflow: hidden;
+}
+
+.flex div{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    color: white;
+
+
+}
+
+.flex div:hover{
+    cursor: pointer;
+}
+
+.flex div:first-child{
+    background-color: black;
+    color: white;
+
+    /*
+    order property relates to flex-box:it make you be able to order the element in the css by giving it a number 
+    */
+    order:3;
+
+    /*
+    flex-grow:
+    default value is 0 and makes the element doesn't grow in flexbox with the father contanier
+    value 1 makes the element be able to grow with the fater to full the father container
+    And it may take value above than 1 . In this way it controls that this element will growth nth when the screen becomes big
+    */
+    flex-grow: 1;
+
+    /* flex-shrink: default value is 1 :it makes the element to shrink with the father when the width becomes smaller
+    0 doesn't allow the element to shrink with the father
+    */
+    flex-shrink:0;
+}
+
+
+.flex div:nth-child(2){
+    background-color: blue;
+    color: white;
+}
+
+.flex div:nth-child(3){
+    background-color: red;
+    color: white;
+}
