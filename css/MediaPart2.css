@@ -1,0 +1,29 @@
+div{
+    color: white;
+    float: left;
+}
+
+@media (min-width:320px) AND (max-width:480){
+    div{
+        background-color: green;
+    }
+}
+
+@media (min-width:481px) AND (max-width:776px){
+    div{
+        background-color: blue;
+    }
+}
+
+@media (min-width:777px) AND (max-width:1200px)
+{
+    div{
+        background-color: red;
+    }
+}
+
+@media (min-width:1201px){
+    div{
+        background-color: black;
+    }
+}
