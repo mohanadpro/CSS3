@@ -1,0 +1,6 @@
+p{
+    /* column count : divides the p into 3 column */
+    -webkit-column-count: 3;
+    /* column gap: makes a between the column 50px */
+    -webkit-column-gap: 50px;
+}
