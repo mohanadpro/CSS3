@@ -20,6 +20,18 @@
     grid-template-columns: 2fr 1fr 1fr;
 
 
+    /*    
+    1. grid-template-rows:200px 100px 150px
+    it divide the screen to 3 rows and each one of them takes its own value
+    2. repeat(4,200px)
+    it divide the screen to 4 rows and each one of them takes 200px
+    3. grid-auto-rows: minmax(200px,auto)
+    it gives the fraction minimum value 200px and if the content becomes more it expands
+    */
+    grid-auto-rows: minmax(200px,auto);
+    overflow: auto;
+ 
+
 }
 
 .grid-container > .item{
