@@ -1,1 +1,5 @@
 https://codepen.io/
+
+https://daneden.github.io/animate.css/
+
+https://ianlunn.github.io/Hover/

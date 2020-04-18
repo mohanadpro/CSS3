@@ -1,0 +1,32 @@
+
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.grid-container{
+    width: 100%; 
+    display: grid;  
+
+    /* 
+    1. 2fr 1fr 1fr;
+    it divides the width of the screen to 3 columns and the first one is twice the others
+    2. 20% 20% 20% 20% 20%
+    it divides the width of the screen to 5 columns and all of them are equal : 20%
+    3. repeat(2,40%)
+    it divides the width of the screen to 2 columns and all of them are equal :40%
+    */
+    grid-template-columns: 2fr 1fr 1fr;
+
+
+}
+
+.grid-container > .item{
+    width: 100%;
+    background-color: rgb(43, 40, 40);
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    margin: 0 5px 10px;
+}
