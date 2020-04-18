@@ -17,7 +17,7 @@
     3. repeat(2,40%)
     it divides the width of the screen to 2 columns and all of them are equal :40%
     */
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 
 
     /*    
@@ -70,4 +70,18 @@
 }
 .nested-grid p:last-of-type{
     background-color: rgb(69, 121, 27);
+}
+
+.grid-container .item5{
+
+    /* it tell the grid th let the class item5 to start from column 1 to the column 4 so it becomes bigger
+    grid-column-start: 1;
+    grid-column-end: 4;
+    we can reduce it grid-column: start/end;
+    */
+    grid-column: 1/4;
+}
+
+.grid-container .item7{
+    grid-column: 1/5;
 }
