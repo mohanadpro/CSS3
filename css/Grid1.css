@@ -29,6 +29,17 @@
     it gives the fraction minimum value 200px and if the content becomes more it expands
     */
     grid-auto-rows: minmax(200px,auto);
+
+    /* 
+    makes a gap between the columns and rows
+    grid-column-gap: 10px;
+    grid-row-gap: 10px; 
+    we can reduce them by grid-gap: rows-gap columns-gap
+    */ 
+    grid-gap: 50px 20px;
+
+
+
     overflow: auto;
  
 
@@ -39,6 +50,6 @@
     background-color: rgb(43, 40, 40);
     color: white;
     text-align: center;
-    line-height: 100px;
-    margin: 0 5px 10px;
+    line-height: 30px;
+    margin: 0 5px;
 }
