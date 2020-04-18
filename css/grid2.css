@@ -1,0 +1,27 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: minmax(200px,auto);
+    grid-gap: 10px;
+
+    background-color: teal;
+    /* justify-items: 
+    right :it aligns the items to the right horizontally
+    start: it aligns the items to the left horizontally
+    center: it aligns the items in the center horizontally
+    */
+    justify-items: center;
+
+    /* align-items: 
+    right :it aligns the items to the right verticaly
+    start: it aligns the items to the left verticaly
+    center: it aligns the items in the center verticaly
+    */
+    align-items: center;
+}
+
+.grid-container > .item{
+    background-color: rgb(24, 22, 22);
+    color: white;
+    padding: 30px;
+}
