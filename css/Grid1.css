@@ -38,8 +38,6 @@
     */ 
     grid-gap: 50px 20px;
 
-
-
     overflow: auto;
  
 
@@ -52,4 +50,24 @@
     text-align: center;
     line-height: 30px;
     margin: 0 5px;
+}
+
+.nested-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 10px;
+}
+
+.nested-grid p:first-of-type{
+    background-color: rgb(35, 35, 105);
+}
+
+.nested-grid p:nth-of-type(2){
+    background-color: red;
+}
+.nested-grid p:nth-of-type(3){
+    background-color: rgb(51, 25, 146);
+}
+.nested-grid p:last-of-type{
+    background-color: rgb(69, 121, 27);
 }
