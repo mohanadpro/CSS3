@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+    perspective: 600px;
+}
+
+.container{
+    width: 200px;
+    text-align: center;
+    padding: 10px;
+    float: left;    
+    /* transform-style: preserve-3d; */
+
+}
+
+.container div{
+    position: relative;
+    height: 50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    z-index: 2;
+}
+
+.normal::before{
+    display: block;
+    content: "Normal";
+    margin-bottom: 20px;
+}
+
+.transition::before{
+    display: block;
+    content: "Transition";
+    margin-bottom: 20px;
+}
+
+
+.animation::before{
+    display: block;
+    content: "Animation";
+    margin-bottom: 20px;
+}
+
+.container .facebook{
+    background-color: #3b5998;
+}
+
+.container .twitter{
+    background-color: #00acee;
+} 
+
+.container .youtube{
+    background-color: #c4302b;
+}
+
+
+.container a{
+    z-index: 1;
+    position: relative;
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    top: -50px;
+    height: 50px;
+    width: 100%;
+    text-decoration: none;
+    line-height: 50px;
+    
+}
+/* when I hover on the container class the inside a will move to the 0 postion  */
+.normal:hover a{
+    top: 0px;
+}
+
+.transition:hover a{
+    transition:all 1s ease-in-out;
+    top: 0px;
+}
+
+.animation:hover a{
+    animation: swing .5s ease-in-out;
+    top: 0px;
+    transform-origin: top;
+    transition: all .5s ease-in-out;
+}
+
+@keyframes swing{
+    0%{
+        transform:rotateX(-30deg);
+    }
+    20%{
+        transform:rotateX(30deg);
+    }
+    40%{
+        transform:rotateX(-30deg);
+    }
+    60%{
+        transform:rotateX(30deg);
+    }
+    80%{
+        transform:rotateX(-30deg);
+    }
+    100%{
+        transform: rotateX(30deg);
+    }
+}
+
